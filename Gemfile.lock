@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/tarebyte/middleman-gh-pages.git
+  revision: 4c5a578e79a1f8bf4e909169cc0948d6bb2d5304
+  branch: github_user_pages
+  specs:
+    middleman-gh-pages (0.0.3)
+      rake (> 0.9.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -90,6 +98,7 @@ GEM
     rack (1.6.4)
     rack-livereload (0.3.16)
       rack
+    rake (10.4.2)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -115,6 +124,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.5)
   middleman (>= 4.0.0.rc.1)
+  middleman-gh-pages!
   middleman-livereload
   middleman-sprockets (>= 4.0.0.rc.1)
   slim
