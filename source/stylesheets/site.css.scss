@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+$link-color: #333;
+$font-family-sans-serif: 'Libre Baskerville', Georgia, sans-serif;
+$headings-font-family: 'Montserrat', 'Helvetica', sans-serif;
+$headings-font-weight: 700;
+$font-size-base: 22px;
+
+@import "bootstrap-custom";
+
+@mixin screen-xs {
+  @media (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+html, body, .landing-wrapper {
+  height: 100%;
+}
+
+.landing-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing {
+  width: 75%;
+  height: 75%;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  @include screen-xs {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+  }
+}
+
+// absolute position triangle background
+.landing-background {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.landing-text {
+  position: relative;
+  z-index: 1;
+}
+
+.landing-logo {
+  font-size: 300px;
+  font-weight: 700;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include screen-xs {
+    font-size: 200px;
+  }
+}
+
+.logo-k {
+  display: inline-block;
+  color: rgba(255, 0, 0, 0.3);
+  position: relative;  // make k overlap w
+}
+
+.logo-w {
+  display: inline-block;
+  color: rgba(0, 0, 255, 0.3);
+  margin-left: -0.177em;
+}
+
+.landing-title {
+  font-size: 36px;
+  margin-top: 0;
+
+  @include screen-xs {
+    font-size: 22px;
+  }
+}
+
+.logo-scroll {
+  & .logo-k,
+  & .logo-w {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px #333;
+    color: #333;
+  }
+
+  // causes slight jank in non webkit browers
+  .logo-w {
+    margin-left: -0.164em;
+  }
+}
+
+
+.triangle-hr-wrapper {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed #333;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.link-unstyled {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.project {
+  font-size: 16px;
+  margin-bottom: 1.5em;
+
+  @include screen-xs {
+    font-size: 22px;
+  }
+
+  blockquote {
+    font-size: 14px;
+
+    @include screen-xs {
+      font-size: 22px;
+    }
+  }
+}
+
+.logo {
+  font-size: 180px;
+  margin-top: 10px;
+}
+
+.social-link {
+  font-size: 1.75em;
+  margin: 0 0.75em;
+
+  @include screen-xs {
+    font-size: 1.25em;
+    margin: 0 0.5em;
+  }
+}

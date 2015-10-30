@@ -1,0 +1,16 @@
+{
+  "name": "kevinformatics.com",
+  "version": "0.0.0",
+  "authors": [
+    "Kevin Wu <me@kevinformatics.com>"
+  ],
+  "homepage": "kevinformatics.com",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "tessellate": "https://github.com/kevinwuhoo/tessellate",
+    "randomcolor": "randomColor#~0.4.0"
+  }
+}
