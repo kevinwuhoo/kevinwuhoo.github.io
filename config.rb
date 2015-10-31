@@ -44,3 +44,5 @@ configure :build do
 end
 
 sprockets.append_path File.join root, 'bower_components'
+
+activate :autoprefixer
