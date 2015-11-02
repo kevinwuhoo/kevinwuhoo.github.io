@@ -45,6 +45,12 @@ html, body, .landing-wrapper {
   }
 }
 
+.landing-no-border {
+  box-shadow: none;
+  cursor: default;
+}
+
+
 // absolute position triangle background
 .landing-background {
   position: absolute;
