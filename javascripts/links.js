@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=null;$("a").hover(function(){var o=$(this);n=setInterval(function(){o.css("color",randomColor({luminosity:"dark"}))},100)},function(){$(this).css("color","#333"),clearInterval(n),n=null})});
