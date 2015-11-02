@@ -1,1 +1,1 @@
-//= require_tree .
+//= require "tessellate/tessellate.js"//= require "randomcolor/randomColor.js"//= require_tree .
