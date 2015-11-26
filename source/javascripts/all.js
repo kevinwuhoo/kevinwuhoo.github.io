@@ -1,1 +1,1 @@
-//= require "tessellate/tessellate.js"//= require "randomcolor/randomColor.js"//= require_tree .
+//= require "tessellate/tessellate.js"//= require "randomcolor/randomColor.js"//= require "lodash/lodash.js"//= require "chroma-js/chroma.js"//= require "patterns.js"//= require_tree .

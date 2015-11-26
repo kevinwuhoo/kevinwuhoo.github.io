@@ -10,7 +10,9 @@
     "bower_components"
   ],
   "dependencies": {
-    "tessellate": "https://github.com/kevinwuhoo/tessellate",
-    "randomcolor": "randomColor#~0.4.0"
+    "randomcolor": "randomColor#~0.4.0",
+    "lodash": "~3.10.1",
+    "tessellate": "git://github.com/kevinwuhoo/tessellate.git",
+    "chroma-js": "~1.1.1"
   }
 }
