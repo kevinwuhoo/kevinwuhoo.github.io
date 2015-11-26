@@ -1,0 +1,242 @@
+
+.col-md-2.col-md-offset-2
+  .resume-nav
+    a href='/'
+      .resume-logo.h6
+        .logo-k K
+        .logo-w W
+
+    .h4
+      a href='https://github.com/kevinwuhoo'
+        i.fa.fa-github
+
+      | &nbsp;&nbsp;&nbsp;
+
+      a href='https://twitter.com/kevinwuhoo'
+        i.fa.fa-twitter
+
+      | &nbsp;&nbsp;&nbsp;
+
+      a href='mailto:me@kevinformatics.com'
+        i.fa.fa-envelope
+
+    br
+
+    ul.list-unstyled
+      - %w[Experience OSS-Contribs Projects Publications Education Teaching Coursework Interests].each do |section|
+        li
+          a href="##{section.downcase}"= section.gsub('-', ' ')
+
+.col-md-6.resume
+  markdown:
+    ###### [ ](#experience)
+
+    #### Experience
+
+    Software Engineer, [Academia.edu](https://www.academia.edu), September 2013 - Present
+
+    * Full Stack Development, wrote and rewrote multiple major features.
+    * Worked on product, design, recruiting, interviewing, and hiring.
+
+    Co-Founder, [Plasmyd.com](http://www.plasmyd.com/), October 2011 - September 2013
+
+    * Acquired by [Academia.edu](https://www.academia.edu).
+    * K5 Launch, Winter 2012.
+
+    Graduate Research Assistant, [Briggs Lab](http://briggs.ucsd.edu), Sept 2011 - Present
+
+    * Developed a novel protein quant method using mass spec data.
+    * Wrote the [Maize Protein Atlas](http://maizeproteome.ucsd.edu).
+
+    Intern, [Google Summer of Code](http://www.google-melange.com/gsoc/homepage/google/gsoc2012), [Su Lab](http://sulab.org), Summer 2012  
+    Genelist storage system and enrichment score computation engine.
+
+    * Developed a RESTful API to for genelists.
+    * Parallelized enrichment score calculations for statistical tests.
+
+    Intern, [NSF REU](http://www.cshl.edu/education/urp), [Ware Lab](http://warelab.org), Summer 2011  
+    Maize De Novo Assembly and Annotation in the Cloud
+
+    * Experimented with de novo assembly using three assemblers.
+    * Assemblies were run using a resources on Amazon Web Services.
+    * Determined the “best” assembler and evaulated AWS pricing.
+
+    Undergraduate Research Assistant, [Saier Lab](http://tcdb.org), Sept 2010 - Jun 2011
+
+    * Developed methods and software to run mass scale comparisons of known transport protein families by creating an in-house distributed system.
+
+    Intern, Calit2 Summer Scholarship, [Wilfred Li](http://www.sdsc.edu/~wilfred), Summer 2009
+
+    * Developed a COVISE plugin for the Tiled Display Wall and Cave Automatic Virtual Enviroment using OpenSceneGraph to display simulation results in real time.
+
+    Undergraduate Research Assistant, [Wilfred Li](http://www.sdsc.edu/~wilfred), Sept 2008 - Oct 2010
+
+    * In silico discovery of small molecule inhibitors of influenza hemagglutinin using computer aided drug discovery.
+    * Analysis of molecular dynamics simulations on multiple subtypes of hemagglutinin.
+
+    Intern, [PRIME](http://prime.ucsd.edu), [Wilfred Li](http://www.sdsc.edu/~wilfred), Summer 2008  
+    Discovery of small molecule inhibitors of H5N1
+
+    * Conducted molecular docking and virtual screening experiments to find a small molecule inhibitor for influenza H5N1 subtype in Beijing, China.
+
+    Undergraduate Research Assistant [Ryan Lab](http://neurograd.ucsd.edu/faculty/detail.php?id=134), Sept 2007 - Mar 2008
+
+    * Optimization of cellular growth protocol of Organ of Corti cells.
+
+
+    ###### [ ](#oss-contribs)
+
+    #### Noteable Open Source Contributions
+
+    * [KEGG REST Module](https://github.com/biopython/biopython/blob/master/Bio/KEGG/REST.py), Biopython
+    * [Genelist Enrichment Score and Calculation Engine](https://bitbucket.org/sulab/genelist_store), GSoC 2012
+
+
+    ###### [ ](#projects)
+
+    #### Notable Projects
+
+    [GraphTV](http://graphtv.kevinformatics.com)
+
+    Visualize IMDb ratings of any TV series. Featured in
+    [Wired](http://www.wired.com/2014/03/graph-quality-every-tv-show-ever-amazing-site/),
+    [Gizmodo](http://gizmodo.com/check-the-tv-ratings-of-any-show-on-imdb-using-this-coo-1550258159),
+    [AV Club](http://www.avclub.com/article/website-turns-any-tv-show-chart-revolutionizes-arg-202409),
+    [Flowing Data](http://flowingdata.com/2014/03/24/graph-tv-shows-ratings-by-episode/),
+    [Fast Company](http://www.fastcodesign.com/3028097/infographic-of-the-day/test-it-did-your-favorite-tv-show-get-better-or-worse),
+    [Time](http://time.com/28906/this-website-graphs-the-popularity-of-tv-shows/),
+    and [others](http://graphtv.kevinformatics.com/about).
+    A v2 of this site is "coming soon".
+
+    <br>
+
+    [Tessellate](http://kevinwuhoo.github.io/tessellate/)
+    ([Code](https://github.com/kevinwuhoo/tessellate))
+
+    > Triangles are my favourite shape <br>
+    > Three points where two lines meet <br>
+    > ∆ (Alt-J) - Tessellate
+
+    Generate tessellated equilateral triangles with pleasant colors onto a canvas.
+    Used to generate the landing graphic above as well as the dividers.
+
+    <br>
+
+    What Would PG Do?
+
+    Currently defunct. Search all of Paul Graham's essays and comments
+    on Hacker News for startup related advice. Got called out on
+    [TechCrunch](http://techcrunch.com/2012/10/15/what-would-paul-graham-do/) and
+    [Inc](http://www.inc.com/kathleen-kim/got-questions-about-start-ups-just-ask-paul-graham.html)
+    for making something so stupid.
+
+    <br>
+
+    [UI Styleguides](http://kevinwuhoo.github.io/ui-styleguides/)
+    ([Code](https://github.com/kevinwuhoo/ui-styleguides))
+
+    A curated list of UI styleguides. At Academia.edu, we were trying
+    to come up with a reference of design patterns and UI components
+    to standardize on. This is a list of companies who have made
+    beautiful, public references that I often draw inspiration from.
+
+    <br>
+
+    [hypepy](https://github.com/kevinwuhoo/hypepy)
+
+    Hypepy (pronounced hyphy) is an python wrapper around Hype Machine.
+    Has support to fetch playlists and related metadata,
+    but I mostly use it to download music from Hype Machine.
+    Adds metadata and album art so it shows a nice image on my phone.
+
+    <br>
+
+    [See more open source projects on Github.](https://github.com/kevinwuhoo)
+
+
+    ###### [ ](#publications)
+
+    #### [Publications](http://scholar.google.com/citations?user=Cf8s2lgAAAAJ&hl=en)
+
+    JW Walley, Z Shen, R Sartor, **KJ Wu**, J Osborn, LG Smith, SP Briggs. Reconstruction of protein networks from an atlas of maize seed proteotypes. PNAS. 2013, 110 (49), E4808-E4817. [10.1073/pnas.1319113110](http://dx.doi.org/10.1073/pnas.1319113110).
+
+    Newhouse, E.I., D. Xu, P.R.L. Markwick, H.C. Pao, **K.J. Wu**, R.E. Amaro, M. Alam, J.A. McCammon, P.W.Arzberger, W.W. Li. Mechanism of Glycan Receptor Recognition and Specificity Switch for Avian, Swine and Human Adapted Influenza Virus Hemagglutinins: A Molecular Dynamics Perspective. J. Am. Chem. Soc., 2009, 131 (47), pp 17430–17442. [10.1021/ja904052q](http://dx.doi.org/10.1021/ja904052q).
+
+
+    ###### [ ](#education)
+
+    #### Education
+
+    M.S., Biology, In Progress  
+    University of California, San Diego
+
+    B.S., Biochemistry and Cell Biology, June 2011  
+    University of California, San Diego
+
+    B.S., Computer Science, June 2011  
+    University of California, San Diego
+
+
+    ###### [ ](#teaching)
+
+    #### Teaching
+
+    ##### Biology
+    * BIBC 103. Biochemical Techniques  
+      Lara Soowal. Spring 2012
+
+    * BICD 100. Genetics  
+      [Debbie Yelon](http://biology.ucsd.edu/faculty/yelon.html). Winter 2011
+
+    * BILD 10. Fundamental Concepts of Biology  
+      Par Towb. Winter 2008
+
+    * BILD 3. Organismic and Evolutionary Biology  
+      [Christopher Wills](http://biology.ucsd.edu/faculty/wills.html). Spring 2010
+
+    ##### Computer Science
+    * CSE 3. Fluency in Information Technology  
+      Gary Gillespie. Winter 2010, Spring 2010
+
+    * CSE 5A. Introduction to Programming  
+      Gary Gillespie. Spring 2010; [Susan Marx](http://cseweb.ucsd.edu/users/smarx). Summer 2010
+
+    * [CSE 12](http://ieng6.ucsd.edu/~cs12x). Basic Data Structures and Object-Oriented Design  
+      Gary Gillespie. Fall, Winter, Spring, Summer 2009, Winter 2010
+
+    * CSE 15L. Software Tools and Techniques Laboratory  
+      [Charles Elkan](http://cseweb.ucsd.edu/~elkan/). Fall 2010
+
+
+    ###### [ ](#coursework)
+
+    #### Graduate Coursework
+
+    * [PHYS 244](http://www.sdsc.edu/about/Director.html). Parallel Computing. ([Michael Norman](http://lca.ucsd.edu/projects/phys244))
+    * BGGN 216. Graduate Biostatistics. ([Raffi Aroian](http://biology.ucsd.edu/faculty/aroian.html))
+    * [BGGN 227](http://labs.biology.ucsd.edu/schroeder/bggn227). Plant Postgenomics & Systems Biology. ([Julian Schroeder](http://labs.biology.ucsd.edu/schroeder))
+    * [PHARM 201](http://www.sdsc.edu/pb/edu/pharm201). Structural Bioinformatics. ([Philip Bourne](http://www.sdsc.edu/~bourne))
+    * [CSE 280A](http://cseweb.ucsd.edu/classes/wi11/cse280a). Advanced Topics in Computational Molecular Biology ([Vineet Bafna](http://www-cse.ucsd.edu/users/vbafna))
+    * [CSE 181](http://cseweb.ucsd.edu/classes/sp10/cse181). Molecular Sequence Analysis. ([Pavel Pevzner](http://cseweb.ucsd.edu/~ppevzner))
+    * [CSE 182](http://cseweb.ucsd.edu/classes/fa09/cse182). Biological Data Analysis. ([Vineet Bafna](http://www-cse.ucsd.edu/users/vbafna))
+    * CSE 184. Computational Molecular Biology. ([Wei Wang](http://wanglab.ucsd.edu))
+    * BENG 183. Applied Genomic Technologies. ([Trey Ideker](http://idekerlab.ucsd.edu/Pages/default.aspx))
+
+
+    ###### [ ](#interests)
+
+    #### Interests
+
+    ##### Rubik’s Cubing
+
+    * [Fastest Solve of 15.60s](http://www.worldcubeassociation.org/results/p.php?i=2005WUKE01). Top 100 in America in 2006 and 2007.
+    * Vice President, Rubik’s Cube Club at UCSD, 2008 - 2010
+
+    ##### Photography
+    Staff Photographer, [The Guardian](http://www.ucsdguardian.org) (Campus Newspaper), 2009 - 2011
+
+    * Photographer for the largest student publication on campus. Photographed various events and submitted photos for publication.
+
+    Photographer and Owner, [Kevin Wu Photography](http://www.kevinwuphotography.com)
+
+    * Freelance wedding, portrait, and event photographer.

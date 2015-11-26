@@ -6,6 +6,8 @@ $headings-font-family: 'Montserrat', 'Helvetica', sans-serif;
 $headings-font-weight: 700;
 $font-size-base: 22px;
 
+$logo-gray: #d4d4d4;
+
 @import "bootstrap-custom";
 
 @mixin screen-xs {
@@ -159,5 +161,47 @@ a:hover {
   @include screen-xs {
     font-size: 1.25em;
     margin: 0 0.5em;
+  }
+}
+
+.x404 {
+  .logo-k, .logo-w {
+    color: $logo-gray;
+  }
+}
+
+.resume {
+  font-size: 18px;
+
+  blockquote {
+    font-size: 14px;
+  }
+
+  .resume-nav {
+    position: fixed;
+  }
+
+  .list-unstyled li {
+    margin-top: 0.4em;
+  }
+
+  .resume-logo .logo-k,
+  .resume-logo .logo-w {
+    font-size: 100px;
+    color: $logo-gray;
+  }
+
+
+  h4 {
+    margin-top: 2em;
+  }
+
+  h4:first-of-type {
+    margin-top: 36px;
+  }
+
+  ul {
+    margin-top: -0.5em;
+    margin-bottom: 1em;
   }
 }
