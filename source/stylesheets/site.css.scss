@@ -16,6 +16,24 @@ $logo-gray: #d4d4d4;
   }
 }
 
+@mixin screen-sm {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}
+
 html, body, .landing-wrapper {
   height: 100%;
 }
@@ -177,11 +195,18 @@ a:hover {
     font-size: 14px;
   }
 
-  .resume-nav {
-    position: fixed;
+  .resume-header {
+    @include screen-md { position: fixed; }
+    @include screen-lg { position: fixed; }
   }
 
-  .list-unstyled li {
+  .resume-nav {
+    @include screen-xs { display: none; }
+    @include screen-sm { display: none; }
+
+  }
+
+  .resume-nav li {
     margin-top: 0.4em;
   }
 
@@ -196,8 +221,12 @@ a:hover {
     margin-top: 2em;
   }
 
+  // align to top of kw logo
   h4:first-of-type {
-    margin-top: 36px;
+    @include screen-xs { margin-top: 0; }
+    @include screen-sm { margin-top: 0; }
+    @include screen-md { margin-top: 36px; }
+    @include screen-lg { margin-top: 36px; }
   }
 
   ul {

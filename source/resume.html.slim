@@ -1,6 +1,9 @@
+ruby:
+  sections = %w[Experience OSS-Contribs Projects Publications
+                Education Teaching Coursework Interests]
 
 .col-md-2.col-md-offset-2
-  .resume-nav
+  .resume-header
     a href='/'
       .resume-logo.h6
         .logo-k K
@@ -22,12 +25,12 @@
 
     br
 
-    ul.list-unstyled
-      - %w[Experience OSS-Contribs Projects Publications Education Teaching Coursework Interests].each do |section|
+    ul.resume-nav.list-unstyled
+      - sections.each do |section|
         li
           a href="##{section.downcase}"= section.gsub('-', ' ')
 
-.col-md-6.resume
+.col-md-6
   markdown:
     ###### [ ](#experience)
 
