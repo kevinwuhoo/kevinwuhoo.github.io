@@ -20,14 +20,14 @@ var generateTriangles = function(opts) {
 }
 
 var backgroundTriangles = function(color) {
-  $('.landing-background').remove()
+  $('.hero-logo__background').remove()
 
   var triangles = generateTriangles({
     randomStart: true,
     colors: color
-  }).addClass('landing-background')
+  }).addClass('hero-logo__background')
 
-  $('.js-landing-background').append(triangles);
+  $('.js-hero-background').append(triangles);
 }
 
 var hrTriangles = function(color) {
@@ -52,10 +52,10 @@ var trianglize = function() {
   hrTriangles('random')
 
   colored = true
-  $('.js-logo-scroll').addClass('logo-scroll')
+  $('.js-logo-scroll').addClass('logo__initials_scroll')
 
-  // add the 'logo-scroll' class that changes the initials to an outline
-  // and pattern the landing graphic during scroll and resize,
+  // add the class that changes the initials to an outline
+  // and pattern the hero graphic during scroll and resize,
   // reset with a setTimeout
   clearTimeout($.data(this, 'scrollTimer'));
 
@@ -64,7 +64,7 @@ var trianglize = function() {
     colored = false
     backgroundTriangles('monochrome')
     hrTriangles('monochrome')
-    $('.js-logo-scroll').removeClass('logo-scroll')
+    $('.js-logo-scroll').removeClass('logo__initials_scroll')
   }, 100));
 }
 
@@ -77,8 +77,8 @@ $(document).ready(function() {
   backgroundTriangles('monochrome')
   hrTriangles('monochrome')
 
-  // when landing is clicked, scroll to start of content
-  $('.js-landing-click-scroll').click(function() {
+  // when hero is clicked, scroll to start of content
+  $('.js-hero-background').click(function() {
     $('html, body').animate({
       scrollTop: $(".js-content-start").offset().top
     }, 1500);

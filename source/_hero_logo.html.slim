@@ -1,0 +1,17 @@
+/ Required Params
+/ triangles (boolean) - whether triangle background apperas
+
+/ Optional Params
+/ subtext (string) - text under the logo
+/ gray_initials (boolean) - whether to display the logo in gray
+/ default_cursor (boolean) - whether to change the hover cursor to default
+
+.hero-logo.text-center class="#{'js-hero-background' if triangles} #{'hero-logo_default-cursor' if locals.has_key?(:default_cursor) && default_cursor }"
+  .hero-logo__text class="#{'logo__initials_gray' if locals.has_key?(:gray_initials) && gray_initials }"
+    .logo.js-logo-scroll
+      .logo__k K
+      .logo__w W
+
+    - if locals.has_key?(:subtext) && subtext
+      .hero-logo__subtext.text-uppercase.h4== subtext
+
