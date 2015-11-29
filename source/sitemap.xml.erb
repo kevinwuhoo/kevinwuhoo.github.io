@@ -3,8 +3,9 @@
 
 <% pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) } %>
 <% pages.each do |p| %>
+  <% next if p.destination_path.include?('blog') || p.destination_path.include?('404') %>
   <url>
-    <loc>http://kevinformatics.com/<%=p.destination_path.gsub('/index.html','')%></loc>
+    <loc><%= "http://kevinformatics.com/#{p.destination_path.gsub('index.html','')}".chomp('/') %></loc>
     <priority>0.7</priority>
   </url>
 <% end %>

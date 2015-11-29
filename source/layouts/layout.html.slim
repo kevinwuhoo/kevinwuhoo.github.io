@@ -5,6 +5,9 @@ html
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
+    - if content_for?(:extra_head)
+      = yield_content :extra_head
+
     title
       = current_page.data.title || "Kevin Wu"
 

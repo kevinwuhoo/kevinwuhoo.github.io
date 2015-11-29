@@ -1,0 +1,7 @@
+- url = "https://medium.com/@kw/#{slug}"
+
+- content_for :extra_head do
+  link rel='canonical' href=url
+  meta http-equiv='refresh' content="0;URL=#{url}"
+
+= partial 'hero_logo', locals: { triangles: false,  gray_initials: true, default_cursor: true, subtext: "I've moved my blog to Medium.<br>Stand by to be redirected."}
