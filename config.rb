@@ -4,6 +4,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page '404.html', directory_index: false
+page 'google4adc10d2fe0eccaa.html', directory_index: false
 
 configure :development do
   activate :livereload
