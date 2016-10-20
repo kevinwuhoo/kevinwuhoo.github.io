@@ -16,7 +16,8 @@ configure :build do
   activate :asset_hash
 end
 
-sprockets.append_path File.join root, 'bower_components'
+activate :sprockets
+sprockets.append_path File.join(root, 'bower_components')
 
 activate :autoprefixer
 activate :directory_indexes
